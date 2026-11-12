@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shameem | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    background: #111a30;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+section {
+    padding: 90px 10%;
+    min-height: 70vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #00e5ff;
+}
+
+.home h3 {
+    color: #ff4ecd;
+    font-size: 25px;
+}
+
+.home p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg,#00e5ff,#a855f7);
+    color: #000;
+    padding: 13px 25px;
+    margin-top: 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #00e5ff;
+    background: linear-gradient(45deg,#172554,#581c87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    box-shadow: 0 0 35px #00e5ff;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #00e5ff;
+}
+
+.about, .contact {
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 2;
+    color: #cbd5e1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #17233d;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #263b5c;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00e5ff;
+    box-shadow: 0 0 20px #00e5ff33;
+}
+
+.card h3 {
+    color: #ff4ecd;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    padding: 15px 25px;
+    background: #17233d;
+    border: 1px solid #00e5ff;
+    border-radius: 30px;
+    color: #00e5ff;
+}
+
+.contact a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+footer {
+    background: #111a30;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SHAMEEM.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="home" id="home">
+
+    <div>
+        <h3>Hello, I'm</h3>
+        <h1>SHAMEEM <span>!</span></h1>
+        <h3>DevOps Intern</h3>
+
+        <p>
+            I am a Computer Hardware Engineering Diploma holder
+            and an aspiring DevOps Engineer.
+            I am passionate about Linux, Cloud Computing,
+            Networking and Automation.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div class="profile">
+        👨‍💻
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+    <h2 class="heading">About Me</h2>
+
+    <p>
+        Hello! My name is Shameem.
+        I have completed Diploma in Computer Hardware Engineering.
+        Currently, I am working as a DevOps Intern.
+        I am interested in learning new technologies,
+        cloud computing, Linux administration and automation.
+        My goal is to become a professional DevOps Engineer.
+    </p>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <h2 class="heading">My Education</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Diploma</h3>
+            <p>Computer Hardware Engineering</p>
+        </div>
+
+        <div class="card">
+            <h3>Higher Secondary</h3>
+            <p>Plus Two - Commerce</p>
+        </div>
+
+        <div class="card">
+            <h3>Current Role</h3>
+            <p>DevOps Intern</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2 class="heading">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Linux</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">HTML</div>
+        <div class="skill">Networking</div>
+        <div class="skill">Shell Scripting</div>
+        <div class="skill">SSH</div>
+        <div class="skill">DevOps</div>
+        <div class="skill">Docker</div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <h2 class="heading">My Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Linux Administration</h3>
+            <p>
+                Linux users, groups, permissions,
+                file management and shell commands.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AWS Cloud</h3>
+            <p>
+                AWS EC2 instance creation,
+                SSH connection and server management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>
+                Version control, Git commands
+                and GitHub repository management.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2 class="heading">Contact Me</h2>
+
+    <p>📱 WhatsApp:
+        <a href="https://wa.me/919037408732" target="_blank">
+            9037408732
+        </a>
+    </p>
+
+    <p>📧 Gmail:
+        <a href="mailto:shameem623537@gmail.com">
+            shameem623537@gmail.com
+        </a>
+    </p>
+
+    <p>📸 Instagram:
+        <a href="https://www.instagram.com/shameeemk/"
+           target="_blank">
+            @shameeemk
+        </a>
+    </p>
+
+    <a href="https://wa.me/919037408732" class="btn">
+        Hire Me
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Shameem | All Rights Reserved</p>
+    <p>Designed with ❤️ by Shameem</p>
+</footer>
+
+</body>
+</html>
